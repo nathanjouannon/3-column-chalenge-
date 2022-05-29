@@ -1,0 +1,120 @@
+/* général sittings */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+     /* primary Color */
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+    /* neutral Color */
+    --Transparent_white_paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very_light_gray_background_headings_buttons: hsl(0, 0%, 95%);
+    /* font familly */
+    --lexand : 'Lexend Deca', sans-serif;
+    --Big_shoulder: 'Big Shoulders Display', cursive;
+}
+
+/* page */
+body {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 85%;
+    height: auto;
+    margin: 70px auto;
+    border-radius: 10px;
+    overflow-y: hidden;
+}
+
+.item {
+    padding: 40px;
+}
+.one {
+    background-color: var(--Bright_orange);
+}
+.seconde {
+    background-color: var(--Dark_cyan);
+}
+.third {
+    background-color: var(--Very_dark_cyan);
+}
+.icon img {
+    width: 50px;
+}
+.title {
+    font-family: var(--Big_shoulder);
+    text-transform: uppercase;
+    color: var(--Very_light_gray_background_headings_buttons);
+    margin: 20px 0;
+}
+.para {
+    font-family: var(--lexand);
+    color: var(--Transparent_white_paragraphs);
+    line-height: 1.4rem;
+    margin-bottom: 20px;
+    padding: 0 10px 0 0;
+}
+button {
+    width: 150px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: white;
+    margin-bottom: 5px;
+    transition: all 0.4s ease;
+}
+button:hover {
+    cursor: pointer;
+    background-color: transparent;
+} 
+.one button {
+    color: var(--Bright_orange);
+}
+.one button:hover {
+    color: white;
+}
+.seconde button {
+    color: var(--Dark_cyan);
+}
+.seconde button:hover {
+    color: white;
+}
+.third button {
+    color: var(--Very_dark_cyan);
+}
+.third button:hover {
+    color: white;
+}
+
+
+/* Media queries for >375px */
+@media screen and (min-width: 1440px) {
+    body {
+        height: 100vh;
+        display: flex;
+        height: 100vh;
+    }
+    .container {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+    }
+    .title {
+        margin-bottom: 40px;
+    }
+    .para {
+        margin-bottom: 100px;
+    }
+}
